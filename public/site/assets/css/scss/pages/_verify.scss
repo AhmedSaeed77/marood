@@ -1,0 +1,139 @@
+/*=================== start verify page ===================*/
+
+.setting_wrapper {
+    background-color: #f2f4fa;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #929aaa;
+    .welcome_message * {
+        margin: 0 3px;
+    }
+    .settings_options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        a {
+            width: 100%;
+            min-height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(169, 189, 213, .31);
+        }
+    }
+    .card {
+        box-sizing: border-box;
+        border-radius: 17px;
+        padding: 15px;
+        background-color: #fff;
+        min-height: 100px;
+        flex: 1;
+        max-width: 750px;
+        border: none;
+        display: flex;
+        align-self: center;
+        justify-content: flex-start;
+        margin: 5px 0;
+        opacity: 1;
+        cursor: pointer;
+    }
+    #back_btn {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+    }
+}
+
+.h-back-btn {
+    align-self: flex-start;
+}
+
+.title {
+    justify-content: center;
+    text-align: center;
+    h3 {
+        color: #4e505b;
+        margin: 5px 0;
+    }
+}
+
+.update_username,
+.update_username .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update_username {
+    .h_input {
+        direction: ltr;
+        margin-left: 5px!important;
+    }
+    label {
+        text-align: center;
+        font-weight: 700;
+        color: #0073c3;
+    }
+}
+
+.licenses .card {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    cursor: unset;
+    max-width: 100%;
+    border-radius: 5px;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.verify .form-control {
+    border: 2px solid #ccc;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    &:not(textarea) {
+        height: 40px;
+    }
+}
+
+.image-uploader-item img {
+    border-radius: 2px;
+    object-fit: cover;
+    height: 110px;
+    width: 110px;
+}
+
+.image-uploader-item__remove {
+    position: absolute;
+    font-size: 13px;
+    right: -8px;
+    top: -8px;
+    background: #000;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .image-uploader-item img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+
+/*=================== End verify page ===================*/

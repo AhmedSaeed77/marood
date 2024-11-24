@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'users' => 'الأعضاء',
+    'new_users' => 'أعضاء جديدة تحتاج للتفعيل',
+    'activated_users' => 'أعضاء تم تفعيلها',
+    'blacklist' => 'القائمة السوداء',
+    'profile_picture' => 'الصورة الشخصية',
+    'username' => 'اسم المستخدم',
+    'email' => 'البريد الإلكتروني',
+    'phone' => 'رقم الجوال',
+    'facebook' => 'فيسبوك',
+    'twitter' => 'تويتر',
+    'instagram' => 'انستجرام',
+    'role' => 'الصلاحية',
+    'membership' => 'العضوية',
+    'actions' => 'الأزرار',
+    'edit_main_info' => 'تعديل البيانات الرئيسية',
+    'edit_info' => 'تعديل البيانات',
+    'edit' => 'تعديل',
+    'close' => 'إغلاق',
+    'permissions' => 'صلاحيات',
+    'activate_user' => 'تفعيل المستخدم',
+    'ban_user' => 'حظر المستخدم',
+    'delete_user' => 'حذف نهائي',
+    'confirm_delete_user' => 'متأكد من حذف :user؟!',
+    'confirm_delete' => 'حذف',
+    'cancel' => 'إغلاق',
+    'unban_user' => 'إلغاء الحظر',
+    'add_role' => 'اضافه الصلاحيه',
+
+];

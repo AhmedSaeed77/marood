@@ -1,0 +1,255 @@
+.user-rating .userMain {
+    background-color: #fff;
+}
+
+.contact-rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #f2f4fa;
+    margin-top: 10px;
+    padding-top: 10px;
+    .rate_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 115, 201, .18);
+        min-width: 130px;
+        min-height: 44px;
+        border-radius: 9px;
+        box-shadow: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: #0073c9;
+    }
+}
+
+.rate_wrapper {
+    min-height: 70vh;
+    margin-top: 0;
+}
+
+.filter_rates {
+    background-color: #fff;
+    border: 1px solid rgba(169, 189, 213, .31);
+    height: 68px;
+    color: #a9bdd5;
+    >div {
+        flex: 1;
+        height: 100%;
+        border: none;
+        cursor: pointer;
+    }
+    >div :first-child {
+        margin-left: 10px;
+    }
+}
+
+.filter_rates,
+.filter_rates>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratingbox {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    word-wrap: break-word;
+    border: 1px solid rgba(169, 189, 213, .31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .upperContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 10px;
+        .username a :first-child {
+            font-size: .7rem;
+        }
+        .left_contnet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            .the_date {
+                margin-left: 10px;
+                color: #a9bdd5;
+            }
+            .good {
+                color: #30d158;
+                background-color: #ebfff0;
+                border-color: rgba(48, 209, 88, .2);
+            }
+            .bad {
+                color: #ff453a;
+                background-color: #ffeaea;
+                border-color: rgba(255, 69, 58, .2);
+            }
+            .status {
+                border: 1px solid;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 15px;
+                min-width: 50px;
+                border-radius: 17px;
+            }
+        }
+    }
+    .rate_body {
+        align-self: flex-start;
+        text-align: start;
+    }
+}
+
+
+/*====================== start add rate page =======================*/
+
+.add-rate-page {
+    .content {
+        background-color: unset;
+    }
+}
+
+.add_rate_wrapper {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0 10px;
+    background-color: #f2f4fa;
+    max-width: 500px;
+    margin: 0 auto;
+    .feedback_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        text-align: start;
+        color: #3b3b4d;
+        font-size: 18px;
+        position: relative;
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 150px;
+            border-radius: 9px;
+            border: 2px solid rgba(170, 189, 213, .6);
+            margin-top: 10px;
+            resize: none;
+            outline-color: #0073c9;
+            color: #454444;
+        }
+        span {
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            font-size: 10px;
+        }
+    }
+    .ask_wrapper {
+        margin-top: 15px;
+        color: #3b3b4d;
+        font-size: 18px;
+        .options_wrapper_type2 {
+            .option {
+                display: flex;
+                width: 100%;
+                background-color: #fff;
+                height: 60px;
+                justify-content: flex-start;
+                align-items: center;
+                border-radius: 9px;
+                padding: 5px 10px;
+                box-sizing: border-box;
+                color: #a9bdd5;
+                input[type=radio] {
+                    margin-left: 10px;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    border-radius: 50%;
+                    width: 16px;
+                    height: 16px;
+                    border: 2px solid #fff;
+                    box-shadow: 0 0 0 2px #a9bdd5;
+                }
+                input[type=radio]:checked {
+                    background-color: #0473c0;
+                    box-shadow: 0 0 0 2px #0473c0;
+                }
+            }
+            .active {
+                color: #0473c0;
+                border: 1px solid #0473c0;
+                background-color: #f4faff;
+            }
+        }
+    }
+    .options_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        label {
+            height: 100px;
+            border: none;
+            color: #a9bdd5;
+            border-radius: 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 47%;
+            cursor: pointer;
+            background-color: #fff;
+            white-space: nowrap;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .active {
+            border: 1px solid #0473c0;
+            color: #0473c0;
+            background-color: #f4faff;
+        }
+    }
+    .submit_wrapper {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        box-sizing: border-box;
+        margin-top: 20px;
+        .submit {
+            flex: 1;
+            background-color: #0073c9;
+            color: #fff;
+            min-height: 44px;
+            border-radius: 4px;
+            &:disabled {
+                background-color: #81899a;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .add_rate_wrapper .options_wrapper {
+        display: block;
+        label {
+            width: 100%;
+        }
+    }
+}
+
+
+/*====================== End add rate page =======================*/

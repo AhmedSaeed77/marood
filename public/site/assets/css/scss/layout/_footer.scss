@@ -1,0 +1,110 @@
+/*--------------------------------------------------------------
+# Start Footer
+--------------------------------------------------------------*/
+
+.footer {
+    background: #f8f7f7 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    padding: 10px 5px 5px;
+    .download-apps {
+        img {
+            width: 125px;
+            margin: 5px;
+        }
+    }
+    hr {
+        height: 0;
+        border: 0;
+        border-top: 1px solid #eee;
+        background-color: #eee;
+        color: #eee;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .footer-links {
+        li {
+            font-size: 16px;
+            svg {
+                margin-left: 10px;
+                color: #aaa;
+            }
+        }
+    }
+    .control-size {
+        button {
+            cursor: pointer;
+            background-color: #fff;
+            border: .05rem solid #ccc;
+            border-radius: 4px;
+            color: #737171;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: none;
+            margin: 0 3px;
+            &:focus {
+                outline: -webkit-focus-ring-color auto 1px;
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Start Copy Right
+--------------------------------------------------------------*/
+
+.subfooter {
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    margin: -6px;
+    border-radius: 0 0 4px 4px;
+    margin-top: 1rem;
+    font-size: 18px;
+    p {
+        margin-top: 0;
+        margin-bottom: .6em;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-links {
+        column-count: 3;
+    }
+}
+
+@media(max-width:767px) {
+    .copyright .copy {
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .copyright .copy {
+        order: 2;
+        justify-content: center;
+        margin-bottom: 13px;
+    }
+    .copyright .image {
+        text-align: center;
+    }
+    .footer .list li {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End Copy Right
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# End Footer
+--------------------------------------------------------------*/

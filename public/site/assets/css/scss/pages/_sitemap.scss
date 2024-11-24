@@ -1,0 +1,51 @@
+.sitemap-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    .sitemap-item {
+        min-width: 200px;
+        margin: 10px;
+        flex: 1;
+        box-sizing: border-box;
+        box-shadow: 0 28px 72px rgb(0 0 0 / 3%);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, .07);
+        h3 {
+            text-align: center;
+            margin-bottom: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .children {
+            position: relative;
+            li {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    top: 10px;
+                    right: -20px;
+                    content: "";
+                    width: 17px;
+                    height: 1px;
+                    background-color: rgba(0, 0, 0, .07);
+                }
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: -11px;
+                right: -1px;
+                width: 1px;
+                height: 100%;
+                background-color: rgba(0, 0, 0, .07);
+            }
+        }
+    }
+}

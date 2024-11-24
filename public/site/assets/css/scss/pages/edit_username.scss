@@ -1,0 +1,67 @@
+.update_username,
+.update_username .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update_username {
+    .title {
+        justify-content: center;
+        text-align: center;
+        h3 {
+            color: #4e505b;
+            margin: 5px 0;
+        }
+    }
+    .card_preview {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        .user_logo_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #b7c9dd;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            color: #fff;
+        }
+        .usernames_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #728ca7;
+            box-sizing: border-box;
+            margin-top: 10px;
+            h5 {
+                margin: 0;
+            }
+            small {
+                min-height: 20px;
+                direction: ltr;
+            }
+        }
+    }
+    label {
+        text-align: center;
+        font-weight: 700;
+        color: #0073c3;
+    }
+    .h_input {
+        direction: ltr;
+        margin-left: 5px!important;
+    }
+    .status_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

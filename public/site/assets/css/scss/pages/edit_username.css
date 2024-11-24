@@ -1,0 +1,67 @@
+.update_username,
+.update_username .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.update_username .title {
+  justify-content: center;
+  text-align: center;
+}
+.update_username .title h3 {
+  color: #4e505b;
+  margin: 5px 0;
+}
+.update_username .card_preview {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.update_username .card_preview .user_logo_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b7c9dd;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  color: #fff;
+}
+.update_username .card_preview .usernames_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #728ca7;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.update_username .card_preview .usernames_wrapper h5 {
+  margin: 0;
+}
+.update_username .card_preview .usernames_wrapper small {
+  min-height: 20px;
+  direction: ltr;
+}
+.update_username label {
+  text-align: center;
+  font-weight: 700;
+  color: #0073c3;
+}
+.update_username .h_input {
+  direction: ltr;
+  margin-left: 5px !important;
+}
+.update_username .status_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=edit_username.css.map */

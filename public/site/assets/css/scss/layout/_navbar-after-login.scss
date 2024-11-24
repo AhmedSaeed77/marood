@@ -1,0 +1,144 @@
+/*--------------------------------------------------------------
+# Start navbar after login
+--------------------------------------------------------------*/
+
+.header-login {
+    grid-area: header;
+    background-color: #fff;
+    .mainNavbar {
+        background: $mainColor;
+    }
+    .headContent {
+        border-radius: 4px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 5px 0;
+        margin: 2px;
+        height: 56px;
+        .headLogo {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            a {
+                color: #fff;
+                font-size: 1.5rem;
+                img {
+                    height: 40px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .userMenu {
+        font-size: 1.2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        a {
+            color: #b9daf1;
+            padding: 14px 18px;
+            display: inline-block;
+            text-decoration: none;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .user-actions {
+        position: relative;
+        .toggle-user-action-handle {
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    .badge {
+        color: #fff;
+        font-size: .7em;
+        border-radius: 5px;
+        padding: 3px 5px;
+        line-height: 1;
+        display: inline-block;
+        vertical-align: text-top;
+        margin: 2px;
+    }
+    .badge-danger {
+        background-color: #d03333;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .userMenu {
+        -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+        flex-grow: 2;
+    }
+}
+
+@media (min-width: 600px) {
+    .hideLarge {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hideSmall {
+        display: none;
+    }
+    .mobileUserMenu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        a {
+            font-size: 1.5rem;
+            color: #aaa;
+        }
+    }
+    .logo img {
+        max-height: 25px;
+        margin-top: 5px;
+    }
+    .header-login .userMenu a {
+        padding: 14px 0px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+    .userMenu>li:not(.user-actions) .item-text {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-login .container,
+    .container-sm {
+        max-width: 700px !important;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End  navbar after login
+--------------------------------------------------------------*/

@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+# Start nav-menu
+--------------------------------------------------------------*/
+
+.nav-menu {
+    padding: 0.5rem 0;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fff;
+    .list-nav {
+        padding: 0;
+        margin: 0;
+        li {
+            transition: .3s;
+            padding-right: 4.5%;
+            display: inline-block;
+            a {
+                position: relative;
+                font-size: 17px;
+                color: #919191;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            i {
+                margin-left: 6px;
+            }
+        }
+    }
+}
+
+.nav-bottom {
+    background-color: $mainColor;
+    svg {
+        width: 1em;
+    }
+    .logo {
+        img {
+            width: 178px;
+        }
+    }
+    .setting-site {
+        display: flex;
+        justify-content: flex-end;
+        .login-btn {
+            color: #b9daf1;
+            padding: 14px 10px;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 21px;
+            transition: .3s;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media(max-width:1479px) {
+    .nav-menu .list-nav li {
+        &:first-of-type {
+            padding-right: 0%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .langSwitch {
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:575px) {
+    .nav-bottom {
+        .logo img {
+            width: 100px;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End nav-menu
+--------------------------------------------------------------*/

@@ -1,0 +1,138 @@
+.note {
+    padding: 0;
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 750px;
+        padding: 5px;
+        .right {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: nowrap;
+            color: #929aaa;
+            >:first-child {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.ds_btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #929aaa;
+    color: #f2f4fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ds_btn_rounded {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.ds_btn_type1 {
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.card {
+    box-sizing: border-box;
+    border-radius: 17px;
+    padding: 15px;
+    background-color: #f2f4fa;
+    min-height: 100px;
+    flex: 1;
+    max-width: 750px;
+    border: none;
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 0;
+    opacity: .5;
+    cursor: pointer;
+    flex-direction: row;
+    box-shadow: 0 0 8px rgb(0 0 0 / 7%);
+    .success {
+        background-color: #ebfff0;
+        color: #30d158;
+    }
+    .content,
+    .icon_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .icon_wrapper {
+        align-items: center;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+        font-size: 20px;
+    }
+    .content {
+        flex-direction: column;
+        flex: 1;
+        padding-right: 13px;
+        .main {
+            flex: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-bottom: 5px;
+            >:first-child {
+                margin-bottom: 10px;
+            }
+            .title {
+                color: #0473c0;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .meta_text {
+                color: #2e2f34;
+            }
+        }
+        .meta_data {
+            flex: 2;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .danger {
+        background-color: #ffeaea;
+        color: #ff453a;
+    }
+}
+
+@media (min-width: 768px) {
+    .card .content .meta_data :first-child {
+        margin-left: 25%;
+    }
+}
+
+@media (min-width: 768px) {
+    .actions,
+    .card {
+        width: 65%;
+    }
+}
+
+@media(max-width:575px) {
+    .note .card {
+        display: block;
+        text-align: center;
+        .icon_wrapper {
+            margin: 0 auto 10px;
+        }
+    }
+}

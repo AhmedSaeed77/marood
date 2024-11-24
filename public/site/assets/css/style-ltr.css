@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+# Start Global Page
+--------------------------------------------------------------*/
+
+body {
+    direction: ltr;
+}
+
+label {
+    margin-left: 2px;
+}
+
+.nav-menu .list-nav li i {
+    margin-right: 6px;
+    margin-left: 0;
+}
+
+.nav-bottom .setting-site .langSwitch {
+    margin-left: 1em;
+    margin-right: 0;
+}
+
+.home-content .tagMain .main-content .other-list {
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.footer .list li a i {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.user-page .contact-user a i {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.post-page .group a i {
+    margin-right: 7px;
+    margin-left: 0;
+}
+
+.nav-menu .list-nav li {
+    padding-left: 5%;
+    padding-right: 0%;
+}
+
+.svg-nav {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.footer .list li svg {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.post-page .next-item .next i {
+    margin-left: 7px;
+    margin-right: 0;
+}
+
+.post-page .info .contact-user i {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.post-page .random-help-message p {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.user-page .info-user .left-content {
+    padding-right: 25px;
+    padding-left: 0;
+}
+
+.user-page .info-user .right-content {
+    padding-left: 25px;
+    padding-right: 0;
+}
+
+.commission-page .info .main_text a svg {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .commission-page .sub_wrapper .content:first-child {
+        margin-right: 3%;
+        margin-left: 0%;
+    }
+}
+
+.commission-page #cal_wrapper .cal_contnet .com_input_wrapper span,
+.commission-page #cal_wrapper .cal_contnet .output_wrapper .labal {
+    border-right: 1px solid #d4d6de;
+    border-left: 0;
+}
+
+.commission-page #cal_wrapper .cal_contnet .output_wrapper .result #more_info_logo {
+    right: 5px;
+    left: unset;
+}
+
+.commission-page #cal_wrapper .greenAlert svg {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.commission-page #cal_wrapper .btnWrapper .mada .pay_btn_icon_wrapper {
+    margin-left: 10px;
+}
+
+.commission-page .secondOptionWrapper .YellowAlert svg {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.random-help-message .note {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.member-page .twoCards_wrapper .contnet_wrapper:first-child {
+    margin-right: 1.5%;
+    margin-left: 0%;
+}
+
+.member-page .twoCards_wrapper .contnet_wrapper:last-child {
+    margin-left: 1.5%;
+    margin-right: 0%;
+}
+
+.listContFor2Items {
+    padding-left: 50px;
+    padding-right: 0;
+}
+
+.listContFor2Items .icon {
+    left: 0;
+    right: unset;
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+
+/*--------------------------------------------------------------
+# End Global Page
+--------------------------------------------------------------*/

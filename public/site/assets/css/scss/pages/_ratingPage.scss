@@ -1,0 +1,11 @@
+.rating-page {
+    .question {
+        .answer {
+            display: none;
+            margin-top: .5rem;
+            &.show {
+                display: block;
+            }
+        }
+    }
+}

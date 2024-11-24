@@ -1,0 +1,19 @@
+/****Prifixes Mixin******/
+
+@mixin prifixer($property, $value, $prifixes: ()) {
+    @each $prifix in $prifixes {
+        #{'-' + $prifix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+
+/*****background properties Mixin*****/
+
+@mixin bgProperties ($pathImage, $position) {
+    background-image: url($pathImage);
+    background-size: cover;
+    background-position: $position;
+    background-repeat: no-repeat;
+    @content;
+}

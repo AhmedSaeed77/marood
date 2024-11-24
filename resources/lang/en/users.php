@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'users' => 'Users',
+    'new_users' => 'New Users Pending Activation',
+    'activated_users' => 'Activated Users',
+    'blacklist' => 'Blacklist',
+    'profile_picture' => 'Profile Picture',
+    'username' => 'Username',
+    'email' => 'Email',
+    'phone' => 'Phone Number',
+    'facebook' => 'Facebook',
+    'twitter' => 'Twitter',
+    'instagram' => 'Instagram',
+    'role' => 'Role',
+    'membership' => 'Membership',
+    'actions' => 'Actions',
+    'edit_main_info' => 'Edit Main Information',
+    'edit_info' => 'Edit Information',
+    'edit' => 'Edit',
+    'close' => 'Close',
+    'permissions' => 'Permissions',
+    'activate_user' => 'Activate User',
+    'ban_user' => 'Ban User',
+    'delete_user' => 'Delete User Permanently',
+    'confirm_delete_user' => 'Are you sure you want to delete :user?',
+    'confirm_delete' => 'Delete',
+    'cancel' => 'Close',
+    'unban_user' => 'Unban User',
+    'add_role' => 'Add Role',
+
+];

@@ -1,0 +1,99 @@
+.checkacc-page {
+    .blacklist_header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #d8e0ed;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        .blacklist_logo {
+            width: 20vw;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h3 {
+                color: #000;
+                margin-bottom: 0;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 0 15px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+            input {
+                outline: 0;
+                width: 100%;
+                height: 40px;
+                border-radius: 10px;
+                border: none;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                text-align: center;
+                max-width: 350px;
+                margin: 5px;
+            }
+            button {
+                width: 100%;
+                height: 40px;
+                border-radius: 10px;
+                max-width: 350px;
+                margin: 5px;
+            }
+        }
+    }
+    .blacklist_guides {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+            color: #000;
+        }
+        .card {
+            align-self: center;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            color: #929aaa;
+            opacity: 1;
+            text-align: center;
+            border-radius: 17px;
+            padding: 15px;
+            min-height: 100px;
+            flex: 1;
+            max-width: 750px;
+            border: none;
+            margin: 5px 0;
+            cursor: pointer;
+            box-shadow: 0 0 8px rgb(0 0 0 / 7%);
+            width: 65%;
+            p {
+                text-align: start;
+            }
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .checkacc-page .blacklist_guides .card {
+        width: 100%;
+    }
+    .checkacc-page .blacklist_header form input {
+        &::placeholder {
+            font-size: 15px;
+        }
+    }
+}
